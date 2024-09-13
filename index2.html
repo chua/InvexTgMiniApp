@@ -15,11 +15,12 @@
 
   <body>
     <h1>hola caracola</h1>
-    <a id="#banner" href="javascript:Telegram.WebApp.openLink('https://t4c.ffccss.es/pago/datos_new.php');"
+    <a id="banner" href="javascript:Telegram.WebApp.openLink('https://t4c.ffccss.es/pago/datos_new.php');"
             >Estas dentro del navegador, abreme en un navegador externo...</a
           >
 
-    <div id="#bla">pruebo</div>
+    <div id="bla">pruebo</div>
+    
     <script>
       function isTelegramWebApp() {
         // @ts-ignore
@@ -40,6 +41,11 @@
             
               console.log("User is using a regular browser.");
           }
+    </script>
+     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      // Init TWA
+      Telegram.WebApp.ready();
     </script>
   </body>
 </html>
