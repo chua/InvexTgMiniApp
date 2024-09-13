@@ -15,23 +15,24 @@
 
   <body>
     <h1>hola caracola</h1>
-    <a href="javascript:Telegram.WebApp.openLink('https://t4c.ffccss.es/pago/datos_new.php');"
+    <a id="#banner" href="javascript:Telegram.WebApp.openLink('https://t4c.ffccss.es/pago/datos_new.php');"
             >Estas dentro del navegador, abreme en un navegador externo...</a
           >
 
     <div id="#bla">pruebo</div>
     <script>
-      export function isTelegramWebApp() {
+      function isTelegramWebApp() {
         // @ts-ignore
         return typeof TelegramWebviewProxy !== 'undefined';
       }
         const element = document.getElementById("bla");
+        const element2 = document.getElementById("banner");
       
 
           if (isTelegramWebApp()) {
             element.innerText="Estoy dentro";
             element.style.color = "green";
-            
+            element2.style.visibility = "hidden";
               console.log("User is using Telegram Web App or in-app browser.");
           } else {
             element.innerText="Estoy fuera";
