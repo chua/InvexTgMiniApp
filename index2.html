@@ -8,13 +8,16 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Hola/title>
+    <title>Hola</title>
     
     </style>
   </head>
 
   <body>
-    hola caracola
+    <h1>hola caracola</h1>
+    <a href="javascript:Telegram.WebApp.openLink('https://t4c.ffccss.es/pago/datos_new.php');"
+            >Estas dentro del navegador, abreme en un navegador externo...</a
+          >
 
     <div id="#bla">pruebo</div>
     <script>
@@ -22,7 +25,7 @@
         // @ts-ignore
         return typeof TelegramWebviewProxy !== 'undefined';
       }
-const element = document.getElementById("bla");
+        const element = document.getElementById("bla");
       
 
           if (isTelegramWebApp()) {
